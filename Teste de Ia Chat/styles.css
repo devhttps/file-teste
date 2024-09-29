@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column; /* Para empilhar os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; /* Animação do gradiente */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.caixa-chat {
+    margin-top: 20px; /* Espaçamento acima da caixa */
+    padding: 20px; /* Espaçamento interno da caixa */
+    border: 2px solid #000; /* Borda da caixa */
+    width: 300px; /* Largura da caixa */
+    height: 300px; /* Altura da caixa */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo da caixa com transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
+}
+
+.mensagem {
+    margin-bottom: 10px; /* Espaçamento entre as mensagens */
+    padding: 10px; /* Espaçamento interno das mensagens */
+    background-color: #e1f5fe; /* Cor de fundo das mensagens */
+    border-radius: 5px; /* Bordas arredondadas das mensagens */
+}
+
+.entrada {
+    margin-top: 10px; /* Espaçamento acima da entrada */
+    display: flex; /* Para alinhar o campo de entrada e o botão */
+}
+
+.entrada input {
+    flex: 1; /* Para que o campo de entrada ocupe o espaço disponível */
+    padding: 10px; /* Espaçamento interno do campo de entrada */
+    border: 1px solid #ccc; /* Borda do campo de entrada */
+    border-radius: 5px; /* Bordas arredondadas do campo de entrada */
+}
+
+.entrada button {
+    padding: 10px; /* Espaçamento interno do botão */
+    margin-left: 5px; /* Espaçamento à esquerda do botão */
+    border: none; /* Remove a borda padrão do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
